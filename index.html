@@ -10,7 +10,7 @@
 		<title>Finpay</title>
 	</head>
 	<body>
-		<div class="bg-[#f5f9fb] pb-[330px]">
+		<div class="bg-[#f5f9fb] md:pb-[330px] pb-[260px]">
 			<div
 				class="max-w-screen-xl mx-auto flex pt-8 items-center justify-between mb-32"
 			>
@@ -78,8 +78,8 @@
 				</div>
 			</div>
 			<div class="max-w-screen-xl mx-auto flex">
-				<div class="mr-40">
-					<div class="text-7xl leading-tight mb-6">
+				<div class="md:mr-40 xl:px-0 px-6">
+					<div class="xl:text-7xl text-5xl leading-tight mb-6">
 						<span class="font-extrabold text-[#012734]"
 							>Get paid early</span
 						>
@@ -88,21 +88,21 @@
 							all your pay.
 						</span>
 					</div>
-					<div class="text-gray-700 text-xl leading-8 mb-10">
-						Supports small businesses with simple invoicing, <br />
+					<div class="text-gray-700 xl:text-xl text-lg leading-8 mb-10 sm:max-w-[500px]">
+						Supports small businesses with simple invoicing,
 						powerful integrations, and cash flow management tools.
 					</div>
 					<div
-						class="border border-gray-300 rounded-[20px] max-w-[460px] flex p-1 bg-white mb-14"
+						class="border border-gray-300 rounded-[20px] max-w-[460px] flex md:flex-row flex-col p-1 bg-white mb-14"
 					>
 						<input
 							type="email"
 							placeholder="Your bussiness email"
-							class="px-6 py-4 rounded-2xl flex-1 mr-1 w-full"
+							class="md:px-6 px-4 md:py-4 py-4 rounded-2xl flex-1 mr-1 w-full"
 						/>
 						<button
 							type="button"
-							class="bg-[#018c9b] text-white text-lg py-4 pl-7 pr-5 rounded-2xl flex items-center hover:bg-[#196770] transition duration-150 whitespace-nowrap"
+							class="bg-[#018c9b] text-white text-lg py-4 pl-7 pr-5 rounded-2xl flex items-center justify-center hover:bg-[#196770] transition duration-150 whitespace-nowrap"
 						>
 							<span class="mr-2">Get started</span>
 							<svg
@@ -122,11 +122,11 @@
 							</svg>
 						</button>
 					</div>
-					<div class="flex">
-						<div class="text-3xl font-bold text-[#1c4453] mr-12">
+					<div class="flex sm:flex-row flex-col items-center md:space-y-0 space-y-2">
+						<div class="text-3xl font-bold text-[#1c4453] sm:mr-12">
 							Klarna.
 						</div>
-						<div class="text-3xl font-bold text-[#1c4453] mr-12">
+						<div class="text-3xl font-bold text-[#1c4453] sm:mr-12">
 							coinbase
 						</div>
 						<div class="text-3xl font-bold text-[#1c4453]">
@@ -134,7 +134,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="flex-1 flex relative">
+				<div class="flex-1 relative xl:flex hidden">
 					<div
 						class="bg-white rounded-3xl mt-14 flex-1 shadow-lg max-w-[460px]"
 					>
