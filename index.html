@@ -11,9 +11,78 @@
 	</head>
 	<body>
 		<div class="bg-[#f5f9fb] md:pb-[330px] pb-[260px]">
+			<div class="hidden header-mobile-navigation fixed inset-0 bg-white">
+				<div class="flex items-center justify-between">
+					<div class="pt-8 flex">
+						<svg
+							width="36"
+							height="36"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+							class="mr-2 ml-6"
+						>
+							<path
+								d="M2 12L11.6422 16.8211C11.7734 16.8867 11.839 16.9195 11.9078 16.9324C11.9687 16.9438 12.0313 16.9438 12.0922 16.9324C12.161 16.9195 12.2266 16.8867 12.3578 16.8211L22 12M2 17L11.6422 21.8211C11.7734 21.8867 11.839 21.9195 11.9078 21.9324C11.9687 21.9438 12.0313 21.9438 12.0922 21.9324C12.161 21.9195 12.2266 21.8867 12.3578 21.8211L22 17M2 7L11.6422 2.17889C11.7734 2.1133 11.839 2.0805 11.9078 2.0676C11.9687 2.05616 12.0313 2.05616 12.0922 2.0676C12.161 2.0805 12.2266 2.1133 12.3578 2.17889L22 7L12.3578 11.8211C12.2266 11.8867 12.161 11.9195 12.0922 11.9324C12.0313 11.9438 11.9687 11.9438 11.9078 11.9324C11.839 11.9195 11.7734 11.8867 11.6422 11.8211L2 7Z"
+								stroke="#003748"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+						<a class="text-3xl text-[#1a4c58] font-bold mr-28" href="#">
+							Finpay
+						</a>
+					</div>
+					<button onclick="closeHamburgerMenu()">
+						<svg class="size-7 mr-6 mt-8" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6L6 18M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+					</button>
+				</div>
+				<div class="mt-1.5 flex-col flex justify-center items-center text-lg leading-[44px] h-full pb-[170px]">
+					<a
+						class="text-[#1a4c58] hover:text-[#2f889e] transition duration-150"
+						href="#"
+					>
+						Products
+					</a>
+					<a
+						class="text-[#1a4c58] hover:text-[#2f889e] transition duration-150"
+						href="#"
+					>
+						Customers
+					</a>
+					<a
+						class="text-[#1a4c58] hover:text-[#2f889e] transition duration-150"
+						href="#"
+					>
+						Pricing
+					</a>
+					<a
+						class="text-[#1a4c58] hover:text-[#2f889e] transition duration-150"
+						href="#"
+					>
+						Learn
+					</a>
+					
+					<button
+						class="border border-[#c7c7c7] px-5 rounded-2xl hover:bg-gray-200 transition duration mb-1"
+						type="button"
+					>
+						Login
+					</button>
+					<button
+						class="bg-[#018c9b] px-5 rounded-2xl text-white hover:bg-[#196770] transition duration-150"
+						type="button"
+					>
+						Sign Up
+					</button>
+				</div>
+				
+			</div>
 			<div
 				class="max-w-screen-xl mx-auto flex pt-8 items-center justify-between mb-32"
 			>
+				
 				<div class="flex items-center">
 					<svg
 						width="36"
@@ -21,7 +90,7 @@
 						viewBox="0 0 24 24"
 						fill="none"
 						xmlns="http://www.w3.org/2000/svg"
-						class="mr-2"
+						class="mr-2 ml-6"
 					>
 						<path
 							d="M2 12L11.6422 16.8211C11.7734 16.8867 11.839 16.9195 11.9078 16.9324C11.9687 16.9438 12.0313 16.9438 12.0922 16.9324C12.161 16.9195 12.2266 16.8867 12.3578 16.8211L22 12M2 17L11.6422 21.8211C11.7734 21.8867 11.839 21.9195 11.9078 21.9324C11.9687 21.9438 12.0313 21.9438 12.0922 21.9324C12.161 21.9195 12.2266 21.8867 12.3578 21.8211L22 17M2 7L11.6422 2.17889C11.7734 2.1133 11.839 2.0805 11.9078 2.0676C11.9687 2.05616 12.0313 2.05616 12.0922 2.0676C12.161 2.0805 12.2266 2.1133 12.3578 2.17889L22 7L12.3578 11.8211C12.2266 11.8867 12.161 11.9195 12.0922 11.9324C12.0313 11.9438 11.9687 11.9438 11.9078 11.9324C11.839 11.9195 11.7734 11.8867 11.6422 11.8211L2 7Z"
@@ -35,7 +104,7 @@
 					<a class="text-3xl text-[#1a4c58] font-bold mr-28" href="#">
 						Finpay
 					</a>
-					<div class="mt-1.5">
+					<div class="mt-1.5 lg:flex hidden">
 						<a
 							class="text-[#1a4c58] text-base font-medium mr-14 hover:text-[#2f889e] transition duration-150"
 							href="#"
@@ -62,7 +131,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="flex">
+				<div class="lg:flex hidden ">
 					<button
 						class="border border-[#c7c7c7] px-9 py-3 mr-3 rounded-2xl hover:bg-gray-200 transition duration"
 						type="button"
@@ -75,6 +144,9 @@
 					>
 						Sign Up
 					</button>
+				</div>
+				<div onclick="openHamburgerMenu()">
+					<svg width="24" height="24" viewBox="0 0 24 24" class="mr-6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 12H21M3 6H21M3 18H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
 				</div>
 			</div>
 			<div class="max-w-screen-xl mx-auto flex">
@@ -93,7 +165,7 @@
 						powerful integrations, and cash flow management tools.
 					</div>
 					<div
-						class="border border-gray-300 rounded-[20px] max-w-[460px] flex md:flex-row flex-col p-1 bg-white mb-14"
+						class="border border-gray-300 rounded-[20px] sm:max-w-[460px] flex md:flex-row flex-col p-1 bg-white mb-14"
 					>
 						<input
 							type="email"
@@ -486,8 +558,9 @@
 										stroke-width="2"
 										stroke-linecap="round"
 										stroke-linejoin="round"
-									/></svg
-								><svg
+									/>
+								</svg>
+								<svg
 									width="36"
 									height="36"
 									viewBox="0 0 24 24"
@@ -928,5 +1001,6 @@
 				</div>
 			</div>
 		</div>
+		<script src="main.js"></script>
 	</body>
 </html>
